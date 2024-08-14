@@ -1,0 +1,17 @@
+void main() {
+
+  String inputString = "Madam";
+
+  
+  String cleanedString = inputString.replaceAll(' ', '').toLowerCase();
+
+  
+  bool isPalindrome = cleanedString == cleanedString.split('').reversed.join('');
+
+  
+  if (isPalindrome) {
+    print("The string '$inputString' is a palindrome.");
+  } else {
+    print("The string '$inputString' is not a palindrome.");
+  }
+}

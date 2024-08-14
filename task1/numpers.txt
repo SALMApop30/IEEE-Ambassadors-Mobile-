@@ -1,0 +1,14 @@
+void main() {
+ 
+  String numberString = "405.5";
+
+
+  double numberDouble = double.parse(numberString);
+
+
+  int numberInt = numberDouble.toInt();
+
+  print("String: $numberString");
+  print("Double: $numberDouble");
+  print("Integer: $numberInt");
+}
