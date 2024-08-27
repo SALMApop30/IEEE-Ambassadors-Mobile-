@@ -1,7 +1,7 @@
 class BankAccount {
   String accountNumber = '';
   String accountHolderName = '';
-  double balance = 0;
+  double balance = 0.0;
 
   void setAccountDetails(
       String accNum, String holderName, double initialBalance) {
@@ -33,8 +33,8 @@ class BankAccount {
 
 void main() {
   BankAccount account1 = BankAccount();
-  account1.setAccountDetails('4567893', 'salma mohamed ', 1000);
-  account1.deposit(200);
-  account1.withdraw(150);
+  account1.setAccountDetails('4567893', 'salma mohamed ', 1000.0);
+  account1.deposit(200.0);
+  account1.withdraw(150.0);
   account1.displayBalance();
 }
